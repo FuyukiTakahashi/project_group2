@@ -61,10 +61,14 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
-  font-size: 14px;
+  font-size: 20px;
   cursor: pointer;
   margin-left: 25px;
-  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+  ${mobile({ fontSize: "20px", marginLeft: "10px" })}
+  &:hover{
+    color: red;
+    transform: scale(1.2);
+  }
 `;
 
 const Navbar = () => {
@@ -80,26 +84,26 @@ const Navbar = () => {
             <Input placeholder="Search" />
             <Search style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
-          <MenuItem><NavLink style={{textDecoration:"none"}} to='/about' className={handleActive}>ABOUT</NavLink></MenuItem>
+          <MenuItem><NavLink style={{textDecoration:"none",color: "teal"}} to='/about' className={handleActive}>ABOUT</NavLink></MenuItem>
         </Left>
         <Center>
-          <NavLink style={{textDecoration:"none"}} to={'home'}><Logo>LAST</Logo></NavLink>
+          <NavLink style={{textDecoration:"none",fontSize:"26px",color: "teal"}} to={'home'}><Logo>LAST</Logo></NavLink>
         </Center>
         <Right>
-          <MenuItem><NavLink style={{textDecoration:"none"}} to={'home'}><button>LOGOUT</button></NavLink></MenuItem>
+          <MenuItem><NavLink style={{textDecoration:"none"}} to={'home'}><button style={{color: "teal", backgroundColor:"white", borderColor:"teal",cursor:"pointer"}}>LOGOUT</button></NavLink></MenuItem>
           <MenuItem> 
             <ProductConsumer>
               {value=>{
                  const {cart} = value;
                  if (cart.length > 0){
                   return (
-                  <Link to='/cart'>
+                  <Link style={{textDecoration:"none",color: "teal"}} to='/cart'>
                     <Badge badgeContent={cart.length} color="primary">
                       <ShoppingCartOutlined />
                     </Badge>
                   </Link>);
               } else { return(
-                <Link to='/cart' >
+                <Link style={{textDecoration:"none",color: "teal"}} to='/cart' >
                     <Badge color="primary">
                       <ShoppingCartOutlined />
                     </Badge>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+  margin: 10px 0;
   height: 30px;
   background-color: teal;
   color: white;

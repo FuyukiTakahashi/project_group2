@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CartColumns() {
     return (
-        <div style={{textAlign:"center", margin: "20px"}}>
+        <div style={{textAlign:"center", margin: "28px", color:"teal",fontWeight:"bold"}}>
           <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
                <div >
                    <p>PRODUCTS</p>  
