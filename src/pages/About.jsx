@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar1";
 import Newsletter from "../components/Newsletter";
 
 const Card = ({ avatar, name, information }) => {
