@@ -93,8 +93,9 @@ const Container = styled.div`
 const About = () => {
   return (
     <Container>
-      <Navbar />
       <Announcement />
+      <Navbar />
+      
       <CardList />
       <Newsletter />
       <Footer />

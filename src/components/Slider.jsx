@@ -104,7 +104,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <NavLink to={'productlist'}><Button>SHOW NOW</Button></NavLink>
+              <NavLink to={'/productlist'}><Button>SHOW NOW</Button></NavLink>
             </InfoContainer>
           </Slide>
         ))}

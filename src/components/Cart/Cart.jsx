@@ -27,8 +27,9 @@ export default class Store extends Component {
     render() {
         return (
             <section>      
-                <Navbar/>
                 <Announcement />
+                <Navbar/>
+                
                 <ProductConsumer>
                     {value => {
                         const { cart } = value;
