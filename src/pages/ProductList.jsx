@@ -10,8 +10,9 @@ const Container = styled.div``;
 const ProductList = () => {
   return (
     <Container>
-      <Navbar />
       <Announcement />
+      <Navbar />
+      
       <Products />
       <Newsletter />
       <Footer />

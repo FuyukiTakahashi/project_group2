@@ -50,8 +50,9 @@ export default class Details extends Component {
     render() {
         return (
             <>
-                <Navbar/>
                 <Announcement/>
+                <Navbar/>
+                
                 <ItemContainer>
                 <ProductConsumer>
                 {value=>{
